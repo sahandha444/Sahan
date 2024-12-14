@@ -1,0 +1,35 @@
+#content1{
+    width: 40%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#content2{
+    width: 40%;
+    margin-left: 50%;
+}
+
+#content3{
+    width: 40%;
+    margin-left: 10%;
+}
+
+#content4{
+    width: 40%;
+    margin-left: 50%;
+}
+
+#content5{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2{
+    font-size: 40px;
+    text-align: center;
+}
+
+p{font-size: 20px;}

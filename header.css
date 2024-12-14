@@ -1,0 +1,148 @@
+body{margin: 0; height: 100%;}
+
+#header{height: 100%}
+
+.navbarlinks{text-decoration:none; color: white;}
+
+a{text-decoration: none; color: gray;}
+
+#mainimage{width: 100%; height: 100%;}
+
+.navitems{
+    display: inline;
+    padding-left: 2%; padding-right: 2%; padding-top: 0.5%; padding-bottom: 0.5%;
+    margin-right: 0.05% ;margin-left: 0.05%; margin-top: 0.15%;margin-bottom: 0.15%;
+    background-color: transparent; 
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    position: relative;
+        left:27%;
+}
+
+#navbar{
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    background-color: rgba(0,0,0,0.5);
+
+    display: flex;
+    position: relative;
+        top:30px;
+
+}
+
+h1{text-align: center; font-size: 50px; color: gold;}
+
+#mainimage{
+    flex: content; 
+    position:absolute; 
+    top: 0;
+    z-index: -1;
+}
+
+
+#title{
+    width: 400px;
+    position: relative;
+    left: 50px;
+    top: 10px;
+}
+
+/*Changing Photo*/
+@keyframes imagechange {
+    from{img id="mainimage" src="pool2_main.png"}
+    to{img id="mainimage" src="food_main.png"}
+    
+}
+
+
+/*Animation*/
+@keyframes navitems_home{
+    from{ position: relative;
+            left:0%;
+        opacity: 0%;
+       }
+    to{ position: relative;
+            left:27%;
+        opacity: 100%;
+        }
+    }
+ @keyframes navitems_experiences{
+    from{position: relative;
+            left:0%;
+        opacity: 0%;
+        }
+    to{position: relative;
+            left: 27%;
+        opacity: 100%;
+    }
+}
+@keyframes navitems_offers{
+    from{ position: relative;
+            left:0%;
+        opacity: 0%;
+       }
+    to{ position: relative;
+            left:27%;
+        opacity: 100%;
+        }
+}
+@keyframes navitems_gallery{
+    from{ position: relative;
+            left:60%;
+        opacity: 0%;
+       }
+    to{ position: relative;
+            left:27%;
+        opacity: 100%;
+        }
+}
+@keyframes navitems_facilities{
+    from{ position: relative;
+            left:60%;
+        opacity: 0%;
+       }
+    to{ position: relative;
+            left:27%;
+        opacity: 100%;
+        }
+}
+@keyframes navitems_more{
+    from{ position: relative;
+            left:60%;
+        opacity: 0%;
+       }
+    to{ position: relative;
+            left:27%;
+        opacity: 100%;
+        }
+}
+
+#home{
+    animation-name: navitems_home;
+    animation-duration: 1s;
+}
+#experiences{
+    animation-name: navitems_experiences;
+    animation-duration: 0.75s;
+}
+#offers{
+    animation-name: navitems_offers;
+    animation-duration: 0.5s;
+}
+#gallery{
+    animation-name: navitems_gallery;
+    animation-duration: 0.5s;
+}
+#facilities{
+    animation-name: navitems_facilities;
+    animation-duration: 0.75s;
+}
+#more{
+    animation-name: navitems_more;
+    animation-duration: 1s;
+}
+
+
+
+
